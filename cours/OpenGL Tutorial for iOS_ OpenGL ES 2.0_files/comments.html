@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0171)https://forums.raywenderlich.com/embed/comments?embed_url=https%3A%2F%2Fwww.raywenderlich.com%2F3664%2Fopengl-tutorial-for-ios-opengl-es-2-0&discourse_username=rwenderlich -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link rel="stylesheet" media="screen" href="./embed-c23a8266759c719c181564f1afe9be567a7dd7feb8a475793fa4a155b4b63919.css">
+      <link class="custom-css" rel="stylesheet" href="./7e202ef2-56d7-47d5-98d8-a9c8d15e57dd.css" type="text/css" media="all">
+    <script src="./break_string-cc617154cd957804f2f6a1f3bc68258c9cdca3d4b9a322bf777d145fed04790e.js"></script>
+
+      <title>OpenGL Tutorial for iOS: OpenGL ES 2.0 - Official Tutorials - RWForums</title>
+
+    <script>
+      (function() {
+
+        function postUp(msg) {
+          if (parent) {
+            parent.postMessage(msg, 'https://www.raywenderlich.com/3664/opengl-tutorial-for-ios-opengl-es-2-0');
+          }
+        }
+
+        function clickPostLink(e) {
+          var postId = e.target.getAttribute('data-link-to-post');
+          if (postId) {
+            var postElement = document.getElementById('post-' + postId);
+            if (postElement) {
+              var rect = postElement.getBoundingClientRect();
+              if (rect && rect.top) {
+                postUp({type: 'discourse-scroll', top: rect.top});
+                e.preventDefault();
+                return false;
+              }
+            }
+          }
+        }
+
+        window.onload = function() {
+          // Send a post message with our loaded height
+          postUp({type: 'discourse-resize', height: document['body'].offsetHeight});
+
+          var postLinks = document.querySelectorAll("a[data-link-to-post]"),
+              i;
+
+          for (i=0; i<postLinks.length; i++) {
+            postLinks[i].onclick = clickPostLink;
+          }
+
+          // Make sure all links in the iframe point to _blank
+          var cookedLinks = document.querySelectorAll('.cooked a');
+          for (i=0; i<cookedLinks.length; i++) {
+            cookedLinks[i].target = "_blank";
+          }
+
+          // Adjust all names
+          var names = document.querySelectorAll('.username a');
+          for (i=0; i<names.length; i++) {
+            var username = names[i].innerHTML;
+            if (username) {
+              names[i].innerHTML = new BreakString(username).break();
+            }
+          }
+
+        };
+
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="discourse">
+  <span class="replies">8 replies</span>
+</header>
+
+    <article class="post" id="post-11012">
+      <a title="March 20, 2016  3:00pm" class="post-date" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/2">20 Mar</a>
+
+      <div class="author">
+        <a href="https://forums.raywenderlich.com/users/drouck" target="_blank"><img src="./10111_1.png" alt=""></a>
+      </div>
+      <div class="cooked">
+        <h3 class="username">
+          <a href="https://forums.raywenderlich.com/users/drouck" target="_blank" class="new-user">drouck</a>
+        </h3>
+        <p>A Swift implementation of the code can be found here:</p>
+
+<p><a href="https://github.com/drouck/HelloOpenGL_Swift" class="onebox" target="_blank" rel="nofollow">https://github.com/drouck/HelloOpenGL_Swift</a></p>
+
+      </div>
+    </article>
+    <article class="post" id="post-11510">
+      <a title="March 22, 2016  5:39pm" class="post-date" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/3">22 Mar</a>
+
+      <div class="author">
+        <a href="https://forums.raywenderlich.com/users/rwenderlich" target="_blank"><img src="./71_1.png" alt=""></a>
+      </div>
+      <div class="cooked">
+        <h3 class="username">
+          <a href="https://forums.raywenderlich.com/users/rwenderlich" target="_blank" class="staff">rwenderlich</a>
+        </h3>
+        <p>Cool, thanks <a class="mention" href="https://forums.raywenderlich.com/users/drouck" target="_blank">@drouck</a>! :]</p>
+
+      </div>
+    </article>
+    <article class="post" id="post-12567">
+      <a title="March 29, 2016 12:08pm" class="post-date" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/4">29 Mar</a>
+
+      <div class="author">
+        <a href="https://forums.raywenderlich.com/users/saadplatini" target="_blank"><img src="./12246_1.png" alt=""></a>
+      </div>
+      <div class="cooked">
+        <h3 class="username">
+          <a href="https://forums.raywenderlich.com/users/saadplatini" target="_blank" class="new-user">saadplatini</a>
+        </h3>
+        <p>I tried the same code with Xcode 7. It builds successfully but crashes during execution. I always get the following error: 'Application windows are expected to have a root view controller at the end of application launch'</p>
+
+      </div>
+    </article>
+    <article class="post" id="post-12569">
+      <a title="March 29, 2016 12:19pm" class="post-date" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/5">29 Mar</a>
+
+      <div class="author">
+        <a href="https://forums.raywenderlich.com/users/saadplatini" target="_blank"><img src="./12246_1.png" alt=""></a>
+      </div>
+      <div class="cooked">
+        <h3 class="username">
+          <a href="https://forums.raywenderlich.com/users/saadplatini" target="_blank" class="new-user">saadplatini</a>
+        </h3>
+        <p>Problem solved! I added the following line of code inside the function  "- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions </p>
+
+<p> NSArray *windows = [[UIApplication sharedApplication] windows];<br>    for(UIWindow *window in windows) {<br>        NSLog(@"window: %@",window.description);<br>        if(window.rootViewController == nil){<br>            UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];<br>            window.rootViewController = vc;<br>        }<br>    }</p>
+
+      </div>
+    </article>
+    <article class="post" id="post-15261">
+      <a title="April 15, 2016 11:05am" class="post-date" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/6">15 Apr</a>
+
+      <div class="author">
+        <a href="https://forums.raywenderlich.com/users/dahlin" target="_blank"><img src="./30735_1.png" alt=""></a>
+      </div>
+      <div class="cooked">
+        <h3 class="username">
+          <a href="https://forums.raywenderlich.com/users/dahlin" target="_blank" class="new-user">dahlin</a>
+        </h3>
+        <blockquote><p>Start up Xcode, and go to File\New\New Project. Select iOS\Application\Window-based Application, and click Next.</p></blockquote>
+
+<p>There is no longer such a template in Xcode. What should you use instead? Also, the tutorial says nothing about what language you should specify under the "Language" dropdown during the new project wizard.<br>Also there is no info on how to compile things. </p>
+
+<p>Tutorial looks promising, however I'm sure that people just drop out because they cannot progress further. I don't have the time or energy to learn XCODE (since I'm not even using it for learning shaders - my shaders will be previewed in another application).</p>
+
+      </div>
+    </article>
+    <article class="post" id="post-21077">
+      <a title="July  3, 2016 10:45pm" class="post-date" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/7"> 3 Jul</a>
+
+      <div class="author">
+        <a href="https://forums.raywenderlich.com/users/jeremyhu" target="_blank"><img src="./36164_1.png" alt=""></a>
+      </div>
+      <div class="cooked">
+        <h3 class="username">
+          <a href="https://forums.raywenderlich.com/users/jeremyhu" target="_blank" class="new-user">jeremyhu</a>
+        </h3>
+        <p>There are tons of tutorials about OpenGL ES 2.0, but this one is the best. Thank you Ray, I use what I learned from your tutorial and made a RPG game render example, if someone who also learned OpenGL ES 2.0 from this article and want to make a game based on this tutorial but have no idea how to start, maybe can have a look at my example: <a href="https://github.com/huxingyi/libphone/tree/master/samples/rpggame#overview" rel="nofollow" target="_blank">https://github.com/huxingyi/libphone/tree/master/samples/rpggame#overview</a></p>
+
+      </div>
+    </article>
+    <article class="post" id="post-21613">
+      <a title="July 11, 2016  9:04pm" class="post-date" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/8">11 Jul</a>
+
+      <div class="author">
+        <a href="https://forums.raywenderlich.com/users/fra" target="_blank"><img src="./36727_1.png" alt=""></a>
+      </div>
+      <div class="cooked">
+        <h3 class="username">
+          <a href="https://forums.raywenderlich.com/users/fra" target="_blank" class="new-user">fra</a>
+        </h3>
+        <p>Great tutorial Ray!<br>Is there an updated version for Xcode 7+? I'm not able render into the window. I just get a white screen.</p>
+
+      </div>
+    </article>
+    <article class="post" id="post-23223">
+      <a title="August  6, 2016  8:23pm" class="post-date" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/9"> 6 Aug</a>
+
+      <div class="author">
+        <a href="https://forums.raywenderlich.com/users/bmauter" target="_blank"><img src="./38413_1.png" alt=""></a>
+      </div>
+      <div class="cooked">
+        <h3 class="username">
+          <a href="https://forums.raywenderlich.com/users/bmauter" target="_blank" class="new-user">bmauter</a>
+        </h3>
+        <p>Thanks Ray!</p>
+
+<p>I just completed the tutorial with Xcode 7.  There were a few gotchas, so I hope this saves someone the trouble next time.</p>
+
+<ol>
+<li>There is no Window-based application template.  Use the single view template.</li>
+<li>Delete the <code>Main.storyboard</code> file.</li>
+<li>Clear the reference on the project's target's <strong>Main Interface</strong> field.</li>
+<li>Delete <code>ViewController.h</code> and <code>ViewController.m</code>.</li>
+<li>Replace your app delegate's <code>application:didFinishLaunchingWithOptions:</code> method with the code at the bottom of this post.</li>
+<li>Use Ray's zipped Cocos3D file, but you're going to have to fix a few things.<ol>
+<li>Add <code>#import &lt;UIKit/UIColor.h&gt;</code> at the top of <code>CC3Foundation.h</code>.</li>
+<li>Change the calls to <code>abs</code> in <code>CC3Kazmath.c</code> to <code>fabs</code>.</li>
+<li>Add <code>-fno-objc-arc</code> to <code>CC3Kazmath.c</code>, <code>CC3Foundation.m</code>, <code>CC3GLMatrix.m</code>, <code>CC3Math.m</code> in the project's target's <strong>Build Phases</strong> <strong>Compile Sources</strong> section.</li>
+</ol>
+</li>
+</ol>
+
+<p>Here's the code for <code>AppDelegate.m</code>.</p>
+
+<pre><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UIViewController *vc = [[UIViewController alloc] init];
+    [vc setView:[[OpenGLView alloc] initWithFrame:[_window bounds]]];
+    
+    [_window setRootViewController:vc];
+    [_window makeKeyAndVisible];
+    return YES;
+}</code></pre>
+
+      </div>
+    </article>
+
+    <footer class="clearfix">
+      <a target="_blank" href="https://forums.raywenderlich.com/"><img class="logo" src="./d0342684bc0d4ca22fe893a3af6083387ed8f474.png" alt="D0342684bc0d4ca22fe893a3af6083387ed8f474"></a>
+      <a class="button" target="_blank" href="https://forums.raywenderlich.com/t/opengl-tutorial-for-ios-opengl-es-2-0/6372/9">Continue Discussion</a>
+    </footer>
+    <div class="clearfix"></div>
+
+
+  
+
+</body></html>
