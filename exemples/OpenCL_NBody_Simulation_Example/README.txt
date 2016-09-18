@@ -1,1 +1,0 @@
-This example performs an NBody simulation which calculates a gravity field and corresponding velocity and acceleration contributions accumulated by each body in the system from every other body
